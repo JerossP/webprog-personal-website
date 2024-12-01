@@ -1,65 +1,102 @@
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f2f6fc;
     color: #333;
-    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-body > h1 {
+h1 {
     text-align: center;
     margin-top: 20px;
-    color: #444;
+    color: #2a6bb3;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    border-bottom: 3px solid #2a6bb3;
+    display: inline-block;
+    padding: 10px;
 }
 
 h2 {
-    color: #555;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    color: #244654;
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #b8dee6;
+    width: fit-content;
 }
 
 p, ul {
-    margin: 10px 20px;
-    padding: 0;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    line-height: 1.8;
 }
 
 a {
-    color: #0066cc;
+    color: #2a6bb3;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
+    color: #175785;
     text-decoration: underline;
 }
 
 table {
-    width: 80%;
+    width: 90%;
+    max-width: 900px;
     margin: 20px auto;
     border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 td {
     padding: 10px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: none;
 }
 
 img {
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 40px;
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 body > table + p {
     text-align: center;
     margin: 20px;
+    color: #666;
+}
+
+h2, p, ul, table {
+    background-color: #f9fdff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: circle;
+    padding: 0 20px;
+}
+
+h2 + p, h2 + ul, p + ul {
+    margin-top: -10px;
 }
