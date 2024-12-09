@@ -6,10 +6,11 @@
   align-items: center;
 }
 
-header, footer {
+header {
   background-color: #f0f0f0;
   padding: 20px;
   text-align: center;
+  width: 100%;
 }
 
 main {
