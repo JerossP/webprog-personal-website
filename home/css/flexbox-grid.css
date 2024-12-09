@@ -2,16 +2,21 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
+  justify-items: center;
+  align-items: center;
 }
 
 header, footer {
   background-color: #f0f0f0;
   padding: 20px;
+  text-align: center;
 }
 
 main {
   display: flex;
   flex-direction: row;
+  padding: 10px;
+  justify-content: center;
 }
 
 .main-content {
@@ -20,6 +25,8 @@ main {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
 }
 
 .main-content > div {
@@ -29,10 +36,71 @@ main {
   text-align: center;
   line-height: 35px;
   font-size: 15px;
+  border-radius: 8px;
 }
 
 .sidebar {
   flex: 1;
   background-color: #f5f5f5;
   padding: 20px;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex: 1;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content > div {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .sidebar {
+    flex: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-item {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
 }
