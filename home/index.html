@@ -1,53 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="css/mystyle.css">    
-    <title>Personal Profile Web Page</title>
+    <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-<h1>Personal Profile Web Page</h1>
+<div class="container-fluid mt-3">
+    <h1>Personal Profile Web Page</h1>
 
-<h2>About Me</h2>
-<p>Hello! I am Jeross Reilan R. Perez from Mandaluyong City. I love going out and I am very active when it comes to physical activities, although I am not sporty.</p>
-
-<h2>Education / Achievements</h2>
-<ul>
-    <li>High School - <a href="https://www.facebook.com/officialgscs/" target="_blank">Good Shepherd Christian School</a>, graduated with honors</li>
-    <li>Senior High School - <a href="https://www.facebook.com/RizTechUniversity" target="_blank">Rizal Technological University</a>, graduated with honors</li>
-</ul>
-
-<h2>Course</h2>
-<p>Bachelor of Science in Information Technology, specializing in Mobile and Internet Technology at <a href="https://www.facebook.com/asiapacificcollege.edu" target="_blank">Asia Pacific College</a></p>
-
-<h2>IT Experience</h2>
-<ul>
-    <li>Basic knowledge of Python</li>
-    <li>Basic knowledge of Java</li>
-    <li>Basic knowledge of Android Studio</li>
-    <li>Basic knowledge of HTML, SQL, and CSS</li>
-</ul>
-
-<h2>Hobbies & Interests</h2>
-<ul>
-    <li>Playing billiards</li>
-    <li>Playing FPS online games</li>
-    <li>Watching K-dramas, sports anime, and romcoms</li>
-    <li>Going to the gym</li>
-    <li>Night rides</li>
-</ul>
-
-<h2>Goals In Life / Dream</h2>
-<p>My goal is to graduate with a degree in IT and explore opportunities. I also aim to start a business after graduation.</p>
-
-<h2>Picture Gallery</h2>
-<table border="1">
-    <tr>
-        <td><img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/465657511_812931710890618_516940610481054950_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=IabrmiaxhFsQ7kNvgGVnOoj&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&oh=03_Q7cD1QF7aHwL1VMVPiI9ZGZSImxsl5A_2gvas1i8oYvk1-z13Q&oe=6772E1FF" alt="Image 1" width="200"></td>
-        <td><img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/467481705_471466352190615_1115921761820830968_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ukMiw8RuxV4Q7kNvgHuLix9&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD1QHSEwhYx2J6Xj5rk403Vmj_uEI1D9bowwIg_KmdI4hnbQ&oe=6772CBBD" alt="Image 2" width="200"></td>
-        <td><img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.15752-9/467486217_448591414686905_6303604316042543305_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=NK46rVWteawQ7kNvgHRaJGG&_nc_zt=23&_nc_ht=scontent.fmnl17-4.fna&oh=03_Q7cD1QGfy5-_EQ8eYmFtkaqo1UzxwKEMJuGh7AkqIoAShq6TGA&oe=6772ED0F" alt="Image 3" width="200"></td>
-    </tr>
-</table>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md bg-primary text-white">1 of 2<h2>About Me</h2>
+            <p>Hello! I am Jeross Reilan R. Perez from Mandaluyong City. I love going out and I am very active when it comes to physical activities, although I am not sporty.</p>
+        </div>
+        <div class="col-md bg-dark text-white">2 of 2<h2>Education / Achievements</h2>
+            <ul>
+                <li>High School - <a href="https://www.facebook.com/officialgscs/" target="_blank">Good Shepherd Christian School</a>, graduated with honors</li>
+                <li>Senior High School - <a href="https://www.facebook.com/RizTechUniversity" target="_blank">Rizal Technological University</a>, graduated with honors</li>
+            </ul>
+        </div>
+      </div>  
+    </div>
+    <br>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md bg-primary text-white">1 of 5 <h2>Course</h2>
+            <p>Bachelor of Science in Information Technology, specializing in Mobile and Internet Technology at <a href="https://www.facebook.com/asiapacificcollege.edu" target="_blank">Asia Pacific College</a></p>
+        </div>
+        <div class="col-md bg-dark text-white">2 of 5 <h2>IT Experience</h2>
+            <ul>
+                <li>Basic knowledge of Python</li>
+                <li>Basic knowledge of Java</li>
+                <li>Basic knowledge of Android Studio</li>
+                <li>Basic knowledge of HTML, SQL, and CSS</li>
+            </ul>            
+        </div>
+        <div class="col-md bg-primary text-white">3 of 5<h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Playing billiards</li>
+                <li>Playing FPS online games</li>
+                <li>Watching K-dramas, sports anime, and romcoms</li>
+                <li>Going to the gym</li>
+                <li>Night rides</li>
+            </ul>
+        </div>
+        <div class="col-md bg-dark text-white">4 of 5 <h2>Goals In Life / Dream</h2>
+            <p>My goal is to graduate with a degree in IT and explore opportunities. I also aim to start a business after graduation.</p>
+            
+            <h2>Picture Gallery</h2>
+            <table border="1">
+                <tr>
+                    <td><img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/465657511_812931710890618_516940610481054950_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=IabrmiaxhFsQ7kNvgGVnOoj&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&oh=03_Q7cD1QF7aHwL1VMVPiI9ZGZSImxsl5A_2gvas1i8oYvk1-z13Q&oe=6772E1FF" alt="Image 1" width="200"></td>
+                    <td><img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/467481705_471466352190615_1115921761820830968_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ukMiw8RuxV4Q7kNvgHuLix9&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD1QHSEwhYx2J6Xj5rk403Vmj_uEI1D9bowwIg_KmdI4hnbQ&oe=6772CBBD" alt="Image 2" width="200"></td>
+                    <td><img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.15752-9/467486217_448591414686905_6303604316042543305_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=NK46rVWteawQ7kNvgHRaJGG&_nc_zt=23&_nc_ht=scontent.fmnl17-4.fna&oh=03_Q7cD1QGfy5-_EQ8eYmFtkaqo1UzxwKEMJuGh7AkqIoAShq6TGA&oe=6772ED0F" alt="Image 3" width="200"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md bg-dark text-white">5 of 5 <h2>Picture Gallery</h2>
+            <table border="1">
+                <tr>
+                    <td><img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/465657511_812931710890618_516940610481054950_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=IabrmiaxhFsQ7kNvgGVnOoj&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&oh=03_Q7cD1QF7aHwL1VMVPiI9ZGZSImxsl5A_2gvas1i8oYvk1-z13Q&oe=6772E1FF" alt="Image 1" width="200"></td>
+                    <td><img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/467481705_471466352190615_1115921761820830968_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ukMiw8RuxV4Q7kNvgHuLix9&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD1QHSEwhYx2J6Xj5rk403Vmj_uEI1D9bowwIg_KmdI4hnbQ&oe=6772CBBD" alt="Image 2" width="200"></td>
+                    <td><img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.15752-9/467486217_448591414686905_6303604316042543305_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=NK46rVWteawQ7kNvgHRaJGG&_nc_zt=23&_nc_ht=scontent.fmnl17-4.fna&oh=03_Q7cD1QGfy5-_EQ8eYmFtkaqo1UzxwKEMJuGh7AkqIoAShq6TGA&oe=6772ED0F" alt="Image 3" width="200"></td>
+                </tr>
+            </table></div>
+      </div>  
+    </div>
+  </div>
 
 
 </body>
