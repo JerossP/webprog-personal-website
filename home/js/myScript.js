@@ -4,6 +4,7 @@ function myFunction() {
 
 function myFunction2() {
   const element = document.getElementsByTagName("span"); 
-  document.getElementById("demo").innerHTML = 'A ' + element[0].innerHTML; 
   
+  document.getElementById("demo").innerHTML = 'A ' + element[0].innerHTML; 
+
 }
