@@ -1,107 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeross Profile Web Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/flexbox-grid.css?version=0.4">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile Webpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/flexbox-grid.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
-    <div class="container">
-
-       
-        <header>
-            <h1>Jeross Profile Web Page</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#course">Course</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#goals">Goals</a></li>
-                </ul>
-            </nav>
-        </header>
-
-    
-        <main>
-            <section class="main-content">
-                <article id="about-me">
-                    <div>
-                        <h2>About Me</h2>
-                        <p>Hello! I am Jeross Reilan R. Perez from Mandaluyong City. I love going out and I am very active when it comes to physical activities, although I am not sporty.</p>
-                    </div>
-                </article>
-
-                <article id="education">
-                    <div>
-                        <h2>Education / Achievements</h2>
-                        <ul>
-                            <li>High School - <a href="https://www.facebook.com/officialgscs/" target="_blank">Good Shepherd Christian School</a>, graduated with honors</li>
-                            <li>Senior High School - <a href="https://www.facebook.com/RizTechUniversity" target="_blank">Rizal Technological University</a>, graduated with honors</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article id="course">
-                    <div>
-                        <h2>Course</h2>
-                        <p>Bachelor of Science in Information Technology, specializing in Mobile and Internet Technology at <a href="https://www.facebook.com/asiapacificcollege.edu" target="_blank">Asia Pacific College</a></p>
-                    </div>
-                </article>
-
-                <article id="experience">
-                    <div>
-                        <h2>IT Experience</h2>
-                        <ul>
-                            <li>Basic knowledge of Python</li>
-                            <li>Basic knowledge of Java</li>
-                            <li>Basic knowledge of Android Studio</li>
-                            <li>Basic knowledge of HTML, SQL, and CSS</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article id="hobbies">
-                    <div>
-                        <h2>Hobbies & Interests</h2>
-                        <ul>
-                            <li>Playing billiards</li>
-                            <li>Playing FPS online games</li>
-                            <li>Watching K-dramas, sports anime, and romcoms</li>
-                            <li>Going to the gym</li>
-                            <li>Night rides</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article id="goals">
-                    <div>
-                        <h2>Goals In Life / Dream</h2>
-                        <p>My goal is to graduate with a degree in IT and explore opportunities. I also aim to start a business after graduation.</p>
-                    </div>
-                </article>
-
-                <article>
-                    <div>
-                        <h2>Picture Gallery</h2>
-                        <table border="1">
-                            <tr>
-                                <td><img src="images/beach.jpg" alt="Beach Image" width="200"></td>
-                                <td><img src="images/jerox.jpg" alt="Jerox Image" width="200"></td>
-                                <td><img src="images/prom.jpg" alt="Prom Image" width="200"></td>
-                            </tr>
-                        </table>
-                    </div>
-                </article>
-            </section>
-        </main>
-
-        <footer>
-            <p>Asia Pacific College</p>
-        </footer>
+  <div class="profile-container">
+    <header>
+      <h1>PERSONAL PROFILE WEBPAGE</h1>
+    </header>
+    <div class="profile-content">
+      <img src="images/gradpig.png" alt="Your Profile" class="profile-picture"> 
+      <p>Hello! I am Jeross Reilan R. Perez from Mandaluyong City. I love going out and I am very active when it comes to physical activities, although I am not sporty.</p>
+      <div class="button-container">
+        <button onclick="showContent('education')">Education</button>
+        <button onclick="showContent('course')">Course</button>
+        <button onclick="showContent('experience')">IT Experience</button>
+        <button onclick="showContent('hobbies')">Hobbies</button>
+        <button onclick="showContent('goals')">Goals</button>
+        <button onclick="showContent('gallery')">Gallery</button>
+      </div>
+      <div id="dynamic-content" class="dynamic-content">
+        <p>Click the buttons to know more about me!</p>
+      </div>
     </div>
+  </div>
+  
+  <script src="js/script.js"></script>
 </body>
 </html>
